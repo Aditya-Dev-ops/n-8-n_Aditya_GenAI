@@ -1,9 +1,7 @@
-import {prisma} from "@/lib/db"
-import React from 'react'
-
+import { caller } from "@/trpc/server";
 
 const page = async () => {
-  const user  = await prisma.user.findMany();
+  const user  = await caller.getUsers();
   console.log(user);
   return (
     <div className='text-red-500'>
