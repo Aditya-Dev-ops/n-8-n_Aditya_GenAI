@@ -1,15 +1,17 @@
-import {prisma} from "@/lib/db"
-import React from 'react'
+import Button_Logout from "@/components/custom/Button_Logout";
+import { requireAuth } from "@/lib/auth-utils";
+import { caller } from "@/trpc/server";
 
+const Page = async () => {
+    await requireAuth();
+    const data = await caller.getUsers(); 
 
-const page = async () => {
-  const user  = await prisma.user.findMany();
-  console.log(user);
   return (
-    <div className='text-red-500'>
-    {JSON.stringify(user)}
+    <div>
+        <Button_Logout/>
+     {JSON.stringify(data)} 
     </div>
-  )
-}
+  );
+};
 
-export default page;
+export default Page;
