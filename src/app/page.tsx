@@ -1,13 +1,17 @@
+import Button_Logout from "@/components/custom/Button_Logout";
+import { requireAuth } from "@/lib/auth-utils";
 import { caller } from "@/trpc/server";
 
-const page = async () => {
-  const user  = await caller.getUsers();
-  console.log(user);
-  return (
-    <div className='text-red-500'>
-    {JSON.stringify(user)}
-    </div>
-  )
-}
+const Page = async () => {
+    await requireAuth();
+    const data = await caller.getUsers(); 
 
-export default page;
+  return (
+    <div>
+        <Button_Logout/>
+     {JSON.stringify(data)} 
+    </div>
+  );
+};
+
+export default Page;
