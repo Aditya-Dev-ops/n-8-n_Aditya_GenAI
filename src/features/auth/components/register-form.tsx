@@ -88,6 +88,12 @@ export function SignupForm (){
                      type="button"
                      disabled={isPending}
                     >
+                      <Image
+                       src="/logo/github.svg"
+                       alt="Github"
+                       width={20}
+                       height={20}
+                      />
                       Continue with Github
                     </Button>
 
@@ -97,6 +103,12 @@ export function SignupForm (){
                      type="button"
                      disabled={isPending}
                     >
+                      <Image
+                       src="/logo/google.svg"
+                       alt="Google"
+                       width={20}
+                       height={20}
+                      />
                       Continue with Google
                     </Button>
                   </div>

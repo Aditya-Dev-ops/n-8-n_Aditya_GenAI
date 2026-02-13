@@ -56,7 +56,7 @@ export function LoginForm (){
 
   return (
     <div className="flex flex-col gap-6">
-      <Card>
+      <Card className="p-4">
         <CardHeader
         className="text-center"
         >
@@ -79,6 +79,12 @@ export function LoginForm (){
                      type="button"
                      disabled={isPending}
                     >
+                      <Image
+                       src="/logo/github.svg"
+                       alt="Github"
+                       width={20}
+                       height={20}
+                      />
                       Continue with Github
                     </Button>
 
@@ -88,6 +94,12 @@ export function LoginForm (){
                      type="button"
                      disabled={isPending}
                     >
+                     <Image
+                       src="/logo/google.svg"
+                       alt="Google"
+                       width={20}
+                       height={20}
+                      /> 
                       Continue with Google
                     </Button>
                   </div>
