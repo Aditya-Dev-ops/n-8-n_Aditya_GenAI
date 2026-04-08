@@ -40,7 +40,7 @@ export function HydrateClient(props: {children: React.ReactNode}){
   {props.children}
   </HydrationBoundary>
  )
-};
+}; 
 
 // If your router is on a separate server, pass a client:
 // createTRPCOptionsProxy({
