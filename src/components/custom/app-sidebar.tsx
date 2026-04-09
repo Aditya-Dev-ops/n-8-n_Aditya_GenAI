@@ -8,7 +8,7 @@ import {CreditCardIcon, FolderOpenIcon,
 import Link from "next/link";
 import { usePathname , useRouter } from "next/navigation";
 
-import { Sidebar , SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, SidebarTrigger } from "@/components/ui/sidebar";
+import { Sidebar , SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent,  SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, SidebarTrigger } from "@/components/ui/sidebar";
 import Image from "next/image";
 import { authClient } from "@/lib/auth-client";
 

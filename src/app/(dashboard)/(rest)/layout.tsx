@@ -1,4 +1,4 @@
-import { AppHeader } from "@/components/custom/app-header";
+import { AppHeader } from "@/components/custom/rest-header";
 
 
 const layout = ({children}: {children: React.ReactNode}) => {
