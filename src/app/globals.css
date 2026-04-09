@@ -129,6 +129,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
+@import "@xyflow/react/dist/style.css";
 
 @theme inline {
   --color-background: var(--background);
@@ -320,7 +321,6 @@
 
   * {
     @apply border-border outline-ring/50;
-    @import "@xyflow/react/dist/style.css";
   }
   body {
     @apply bg-background text-foreground;

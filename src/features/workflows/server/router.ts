@@ -67,8 +67,7 @@ export const workflowsRouter = createTRPCRouter({
       data:(node.data as Record<string, unknown>) || {},
      }));
     
-     // Transfoem server connections to react-flow compatible connections
-     const edges: Edge[] = workflow.connections.map((connection)=>({
+     // Transform server connections to react-flow compatible edges     const edges: Edge[] = workflow.connections.map((connection)=>({
         id:connection.id,
         source:connection.fromNodeId,
         target:connection.toNodeId,

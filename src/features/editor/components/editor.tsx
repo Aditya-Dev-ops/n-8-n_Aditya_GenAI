@@ -68,9 +68,9 @@ export const Editor = ({workflowId}:{workflowId: string})=>{
      onConnect={onConnect}
      nodeTypes={nodeComponents}
      fitView
-     proOptions={{
-      hideAttribution:true
-     }}
+    //  proOptions={{
+    //   hideAttribution:true
+    //  }}
     >
      <Background />
      <Controls/>

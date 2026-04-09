@@ -16,7 +16,7 @@ type Props = {
 const page = async ({params}: Props) => {
   await requireAuth();
     const {workflowsId } = await params;
-    prefetchOneWorkflow(workflowsId);
+     prefetchOneWorkflow(workflowsId);
 
   return (
     <HydrateClient>

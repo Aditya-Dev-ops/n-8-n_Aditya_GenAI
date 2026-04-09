@@ -25,8 +25,7 @@ export const EditorNameInput = ({workflowId}:{workflowId:string}) =>{
   const updateWorkflowName = useUpdateWorkflowName();
 
   const [isEditing , setIsEditing] = useState(false);
-  const [name,setName] = useState(workflow?.name);
-
+  const [name,setName] = useState(workflow?.name ?? "");
   const inputRef = useRef<HTMLInputElement>(null);
   // const updateNameFunction = (name:string)=>{
   //      updateWorkflowName({id:workflow?.id, name});
